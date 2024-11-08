@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="weather-app">
+        <div class="search-container">
+            <input type="text" id="location-input" placeholder="Enter location">
+            <button id="search-btn"><i class="fa fa-search"></i></button>
+            <div class="temp-toggle">
+                
+                <button id="celsius-btn">°C</button>
+                <button id="fahrenheit-btn">°F</button>
+            </div>
+        </div>
+
+        <div class="current-weather">
+            <div class="weather-icon" id="weather-icon"></div>
+            <div class="location" id="location-name"></div>
+            <div class="temperature" id="current-temp"></div>
+            <div class="description" id="weather-description"></div>
+            <div class="details">
+                <div class="sunrise-sunset">
+                    <div>Sunrise: <span id="sunrise-time"></span></div>
+                    <div>Sunset: <span id="sunset-time"></span></div>
+                </div>
+                <div class="humidity">Humidity: <span id="humidity"></span>%</div> <br>
+                <div>Pressure: <span id="pressure"></span> hPa</div>
+                <div class="wind-speed">Wind Speed: <span id="wind-speed"></span> km/h</div>
+                <div class="air-quality">Air Quality Index: <span id="air-quality"></span></div>
+            </div>
+        </div>
+
+        <div class="forecast">
+            <h2>4-Day Forecast</h2>
+            <div class="forecast-container" id="forecast-container"></div>
+        </div>
+
+        <div class="outfit-recommendation" id="outfit-recommendation"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
